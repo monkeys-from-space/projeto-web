@@ -1,0 +1,113 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  min-width: 960px;
+  min-height: 720px;
+}
+
+.container{
+  width: 100vw;
+  min-width: 1080px;
+  height: 100vh;
+  min-height: 720px;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(data/Turismo/colombo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.row{
+  display: flex;
+  height: 88%;
+  align-items: center;
+  margin-left: 110px;
+  justify-content: center;
+}
+
+.col{
+  width: 50%;
+  
+}
+
+h1{
+color: white;
+font-size: 100px;
+text-shadow: 2px 2px 4px #000000;;
+}
+
+p{
+  color: white;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: justify;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* adiciona indentação no textinho, paragrafo na primeira linha */
+p:first-of-type {
+  text-indent: 2em;
+}
+
+
+button{
+  width: 200px;
+  height: 45px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 12px 0;
+  background: white;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px ;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+button:hover{
+background-color: rgb(210, 210, 25);
+
+}
+
+.card {
+  width: 200px ;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s ease ;
+  font-weight:900 ;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+
+.tituloCard{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+a{ 
+color: black;
+outline: none;
+border: none;
+text-decoration: none;
+}
+
