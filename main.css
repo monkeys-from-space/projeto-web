@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(data/hospedagem/colombo.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+  }
+  .container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+  }
+  
+  @media screen and (max-width:768px){
+    .container{
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 50px;
+  }
+  .content-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin:auto ;
+  }
+  .image-section{
+  
+    float: none;
+    width: 100%;
+    display: block;
+    margin:auto 
+  }
+  .content-section .title{
+    text-align: center;
+    font-size: 19px;
+  }
+  }
+  
+  .content-section{
+    float: left;
+    width: 55%;
+  }
+  .image-section{
+  
+    float: right;
+    width: 40%;
+  }
+  
+  .image-section img{
+    width: 100%;
+    height: auto;
+  
+  }
+  .content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+    color: white;
+  }
+  
+  .content-section .conteudo h3{
+    margin-top: 20px;
+    color: white;
+    font-size: 21px;
+  }
+  
+  .content-section .conteudo p{
+    margin-top: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: white;
+  }
+  .content-section .conteudo .button {
+    margin-top: 30px;
+  }
+  
+  .content-section .conteudo .button a:hover{
+  background-color: yellow;
+  }
+  
+  .content-section .conteudo .button a{
+    background-color: white;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    letter-spacing:  1px; ;
+    border-radius: 30px;
+    font-weight: 700;
+    text-shadow: 2px;
+  }
+  
+  .content{
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-1%,-50%);
+    border-radius: 15px;
+  }
+  
+  .nav{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+  }
+  
+  .barra {
+    width: 70px;
+    height: 17px;
+    border: 2px solid black;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .barra:hover{
+    background-color: white;
+  }
+  
+  input#slide1 ,input#slide2,input#slide3 ,input#slide4,input#slide5 {
+   display: none;
+  }
+  
+  .slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: .6s; 
+  }
+  
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #slide1:checked ~ .s1{
+    margin-left: 0;
+  }
+  
+  #slide2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  
+  #slide3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #slide4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #slide5:checked ~ .s1{
+    margin-left: -80%;
+  }
