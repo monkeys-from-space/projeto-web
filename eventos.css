@@ -6,21 +6,17 @@
 }
 
 body {
-  
- 
-  background-image: url(dataImages/festaFundo.jpeg);
-    
-   
+ background-color: rgb(19, 23, 27);
   background-repeat: no-repeat;
-    
-   
   background-size: cover;
+  font-family: 'Open Sans', cursive;
   }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  
 }
 
 h1 {
@@ -30,9 +26,11 @@ h1 {
 }
 
 img {
+  border-radius: 1.25em;
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
+  
 }
 
 p {
@@ -49,18 +47,21 @@ li {
 }
 
 #primeiro {
-  background-color: #b677f0;
+  background-color: rgb(19, 23, 27);
   color: #fff;
   padding: 20px;
   text-align: center;
+  
 }
 
 .box {
-  background-color: #41013d;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(dataImages/festaFundo.jpg);
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 4, 192, 0.1);
+  box-shadow: 0 10px 10px rgba(255, 4, 192, 0.1);
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
+  height: 90vh;
+  width: 900px
 }
 
 nav ul li {
@@ -78,4 +79,24 @@ footer {
   color: #ffffff;
   padding: 10px;
   text-align: center;
+}
+
+button{
+  width: 100px;
+  height: 45px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 12px 0;
+  background: white;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px ;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+button:hover{
+  background-color: yellow;
 }
